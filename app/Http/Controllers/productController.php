@@ -63,4 +63,12 @@ public function create_product(Request $request){
    }
 
 
+   public function destroy($id){
+    $products =product::find($id);
+    $products->delete();
+    return redirect()->back();
+
+}
+
+
 }

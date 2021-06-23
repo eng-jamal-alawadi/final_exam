@@ -11,6 +11,8 @@ Route::get('all_categories', [productController::class, 'all_categories'])->name
 Route::get('all_products', [productController::class, 'all_products'])->name('all_products');
 Route::get('order', [productController::class, 'order'])->name('order');
 Route::get('create_product', [productController::class, 'create_product'])->name('create_product');
+Route::post('destroy/{id}', [productController::class, 'destroy'])->name('destroy');
+
 
 
 

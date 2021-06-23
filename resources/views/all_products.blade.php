@@ -27,7 +27,8 @@
                   <td>5</td>
                   <td>
                     <a class="btn btn-info" href="">Edit</a>
-                    <form action="destroy" method="POST">
+                    <form action="{{url('destroy/'.$product->id)}}" method="POST">
+                        @csrf
                     <button type="submit" class="btn btn-danger">Delete</button>
                 </form>
                   </td>
